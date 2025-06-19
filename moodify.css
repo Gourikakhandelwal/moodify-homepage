@@ -10,11 +10,16 @@ body {
   margin-top: 20%;
 }
 
-button {
-  padding: 10px 20px;
-  font-size: 16px;
-  margin: 10px;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
+.gif-container {
+      text-align: center;
+      margin-top: 10px;
+    }
+    .gif-container img {
+      max-width: 100%;
+      height: auto;
+      border-radius: 12px;
+    }
+
+h1 {
+  font-family: 'Pacifico', cursive;
 }

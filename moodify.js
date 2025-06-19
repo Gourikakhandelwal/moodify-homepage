@@ -1,4 +1,5 @@
-let intervalId = null;
+
+const gif = document.getElementById('mood-gif');
 
 function getRandomColor() {
   const letters = '0123456789ABCDEF';
@@ -9,15 +10,6 @@ function getRandomColor() {
   return color;
 }
 
-document.getElementById('start').addEventListener('click', () => {
-  if (!intervalId) {
-    intervalId = setInterval(() => {
-      document.body.style.backgroundColor = getRandomColor();
-    }, 1000);
-  }
-});
-
-document.getElementById('stop').addEventListener('click', () => {
-  clearInterval(intervalId);
-  intervalId = null;
-});
+setInterval(() => {
+  document.body.style.backgroundColor = getRandomColor();
+}, 1000);
